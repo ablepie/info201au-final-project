@@ -1,8 +1,31 @@
 Final Proposal 
 Team member: Benjamin Shi, Satvik Vats, April Qian Zhao, Chenxi Di
 
+
+Project Description
+
 Dataset:
 
 Source:
 
-Target Audience 
+Target Audience:
+
+Three specific questions about this dataset:
+1.
+2.
+3.
+
+#####
+Project Description
+The format of your final product:
+
+How will you be reading in your data:
+
+What types of data-wrangling:
+
+What (major/new) libraries will be using in this project:
+
+#####
+Project Set-up
+GitHub Issues:
+
