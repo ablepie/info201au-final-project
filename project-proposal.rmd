@@ -46,7 +46,8 @@ The format of your final product:
    tidyr()
 
 ### What questions, if any, will you be answering with statistical analysis/machine learning?
-   With the help from machine learning, we can accurately anticipate the possibility that if an employee would be negatively influenced by mental disorder bases on gender, size of the company and other measurement about his or her job/working environment.  
+   1. With the help from machine learning, we can accurately anticipate the possibility that if an employee would be negatively influenced by mental disorder bases on gender, size of the company and other measurement about his or her job/working environment. 
+   2. With statistical analysis, we can reach to conclusion that what is/are the most influential element that contribute to one' mental disorder. Some technique like, linear, log transformation or least squared line, will help us to find existing linear or non-linear relationship. 
 
 ### What major challenges do you anticipate? 
    The raw data contains text description and non-quantitative measurement about the survey taker. The feedback ranging from “job description” to “describe the conversation you had”  contains textual input that are hard to categorize. What are feasible ways to interpret and incorporate those information would be a challenge.  
