@@ -1,8 +1,8 @@
-Final Proposal
+# Final Proposal
 Team member: April Qian Zhao, Benjamin Shi, Chenxi Di, Satvik Vats.
 
 
-Project Description
+## Project Description
    The survey data aims to measure attitudes towards mental health in the tech workplace, and examine the frequency of mental health disorders among tech workers. The data can be used in gauging how mental health is viewed within the tech/IT workplace, and the prevalence of certain mental health disorders within the tech industry. The Open Sourcing Mental Illness team of volunteers use this data to drive work in raising awareness and improving conditions for those with mental health disorders in the IT workplace.
 
 Dataset: 1. OSMI Mental Health in Tech Survey 2014
@@ -27,14 +27,14 @@ Three specific questions about this dataset:
    3. How does other factors play a role, for example age, gender, country, company type etc. ?
 
 #####
-Project Description
+## Project Description
 The format of your final product:
    We may use markdown/slide combined with shiny app.
 
-How will you be reading in your data:
+### How will you be reading in your data:
    The source does provide an API to use the data, thus we will be using the API. The downloadable files are also available, giving us an alternate option, if API does incur any problem. The download files are available in csv format and additional complemetary dataset is available in JSON.  
 
-What types of data-wrangling:
+### What types of data-wrangling:
    We will first decide which measurement to use and reshape each individual dataset. Then join these three dataset into one big dataset. We will also reformat the NA unit in the dataset.
 
 What (major/new) libraries will be using in this project:
@@ -50,7 +50,7 @@ What major challenges do you anticipate?
    The raw data contains text description and non-quantitative measurement about the survey taker. The feedback ranging from “job description” to “describe the conversation you had”  contains textual input that are hard to categorize. What are feasible ways to interpret and incorporate those information would be a challenge.  
 
 #####
-Project Set-up
+## Project Set-up
 GitHub:
    All members are added to repository: checked
    5 GitHub Issues created : checked
