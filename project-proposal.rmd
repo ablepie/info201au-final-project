@@ -17,30 +17,37 @@ Source: 1. https://www.kaggle.com/osmi/mental-health-in-tech-survey/data
         3. https://www.kaggle.com/osmihelp/osmi-mental-health-in-tech-survey-2017
 
 Target Audience:
-For employers in Technology field, this project report can draw their attention to the mental health issues that exist in their company. Also by looking over the relationships between targeted features, they would consider some changing to help their employees
+   1. For employers in Technology field, this project report can draw their attention to the mental health issues that exist in their company. Also by looking over the relationships between targeted features, they would consider some changing to help their employees
+   2. For employees in the Technology field, this study can help them to reduce the likelihood of getting a mental disorder. It also provides employees an opportunity to inspect their environment and relationship with coworkers.  
+
 
 Three specific questions about this dataset:
-1. What plausible changes can be observed/noted throughout years?
-2. Is there relationship between number of employees in company and mental disorder?
-3. How does other factors play a role, for example age, gender, country, company type etc. ?
+   1. What plausible changes can be observed/noted throughout years?
+   2. Is there relationship between number of employees in company and mental disorder?
+   3. How does other factors play a role, for example age, gender, country, company type etc. ?
 
 #####
 Project Description
 The format of your final product:
-We may use markdown/slide combined with shiny app.
+   We may use markdown/slide combined with shiny app.
 
 How will you be reading in your data:
-The source does provide an API to use the data, thus we will be using the API. The downloadable files are also available, giving
-us an alternate option, if API does incur any problem.  
+   The source does provide an API to use the data, thus we will be using the API. The downloadable files are also available, giving us an alternate option, if API does incur any problem.  
 
 What types of data-wrangling:
-We will first decide which measurement to use and reshape each individual dataset. Then join these three dataset into one big dataset. We will also reformat the NA unit in the dataset.
+   We will first decide which measurement to use and reshape each individual dataset. Then join these three dataset into one big dataset. We will also reformat the NA unit in the dataset.
 
 What (major/new) libraries will be using in this project:
-stringr()
-ggplot2()
-stringi()
-tidyr()
+   stringr()
+   ggplot2()
+   stringi()
+   tidyr()
+
+What questions, if any, will you be answering with statistical analysis/machine learning?
+   With the help from machine learning, we can accurately anticipate the possibility that if an employee would be negatively influenced by mental disorder bases on gender, size of the company and other measurement about his or her job/working environment.  
+
+What major challenges do you anticipate? 
+   The raw data contains text description and non-quantitative measurement about the survey taker. The feedback ranging from “job description” to “describe the conversation you had”  contains textual input that are hard to categorize. What are feasible ways to interpret and incorporate those information would be a challenge.  
 
 #####
 Project Set-up
