@@ -2,7 +2,7 @@
 Team member: April Qian Zhao, Benjamin Shi, Chenxi Di, Satvik Vats.
 
 
-## Project Description
+### Project Description
    The survey data aims to measure attitudes towards mental health in the tech workplace, and examine the frequency of mental health disorders among tech workers. The data can be used in gauging how mental health is viewed within the tech/IT workplace, and the prevalence of certain mental health disorders within the tech industry. The Open Sourcing Mental Illness team of volunteers use this data to drive work in raising awareness and improving conditions for those with mental health disorders in the IT workplace.
 
 ### Dataset: 
@@ -28,7 +28,7 @@ Team member: April Qian Zhao, Benjamin Shi, Chenxi Di, Satvik Vats.
    2. Is there relationship between number of employees in company and mental disorder?
    3. How does other factors play a role, for example age, gender, country, company type etc. ?
 
-#####
+*****
 ## Project Description
 The format of your final product:
    We may use markdown/slide combined with shiny app.
@@ -52,7 +52,7 @@ The format of your final product:
 ### What major challenges do you anticipate? 
    The raw data contains text description and non-quantitative measurement about the survey taker. The feedback ranging from “job description” to “describe the conversation you had”  contains textual input that are hard to categorize. What are feasible ways to interpret and incorporate those information would be a challenge.  
 
-#####
+*****
 ## Project Set-up
 GitHub:
    All members are added to repository: checked
