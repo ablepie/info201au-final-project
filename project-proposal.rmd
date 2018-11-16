@@ -17,7 +17,11 @@ Source: 1. https://www.kaggle.com/osmi/mental-health-in-tech-survey/data
         3. https://www.kaggle.com/osmihelp/osmi-mental-health-in-tech-survey-2017
 
 Target Audience:
+<<<<<<< HEAD
 For employers in Technology field, this project report can draw their attention to the mental health issues that exist in their company. Also by looking over the relationships between targeted features, they would consider some changing to help their employees
+=======
+For employers in Technology field, this project report can draw their attention to the mental health issues that exist in their company. Also by looking over the relationships between targeted features, they would consider some changing to help their employees 
+>>>>>>> ee0808b3fff34dd9123cd2bd0f3acaab2d028f69
 
 Three specific questions about this dataset:
 1. What plausible changes can be observed/noted throughout years?
