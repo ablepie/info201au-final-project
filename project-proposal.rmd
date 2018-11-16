@@ -4,14 +4,21 @@ Team member: Benjamin Shi, Satvik Vats, April Qian Zhao, Chenxi Di
 
 Project Description
 
+Data on prevalence and attitudes towards mental health among tech workers
+
 Dataset:
+OSMI Mental Health in Tech Survey 2016/2017/2018
 
 Source:
+https://www.kaggle.com/osmi/mental-health-in-tech-2016/version/1,
+https://www.kaggle.com/osmihelp/osmi-mental-health-in-tech-survey-2017, 
+https://www.kaggle.com/osmi/mental-health-in-tech-survey/data
 
 Target Audience:
+Poeple in the Tech Industry who are suffering from Mental health issues. 
 
 Three specific questions about this dataset:
-1.
+1. 
 2.
 3.
 
