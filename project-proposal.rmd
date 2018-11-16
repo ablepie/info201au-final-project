@@ -5,7 +5,7 @@ Team member: April Qian Zhao, Benjamin Shi, Chenxi Di, Satvik Vats.
 Project Description
 The survey data aims to measure attitudes towards mental health in the tech workplace, and examine the frequency of mental health disorders among tech workers. The data can be used in gauging how mental health is viewed within the tech/IT workplace, and the prevalence of certain mental health disorders within the tech industry. The Open Sourcing Mental Illness team of volunteers use this data to drive work in raising awareness and improving conditions for those with mental health disorders in the IT workplace.
 
-Dataset: 1. Mental Health in Tech Survey
+Dataset: 1. OSMI Mental Health in Tech Survey 2014
             Survey on Mental Health in the Tech Workplace in 2014
          2. OSMI Mental Health in Tech Survey 2016
             Data on prevalence and attitudes towards mental health among tech workers
@@ -27,6 +27,7 @@ Three specific questions about this dataset:
 #####
 Project Description
 The format of your final product:
+We may use markdown/slide combined with shiny app.
 
 How will you be reading in your data:
 The source does provide an API to use the data, thus we will be using the API. The downloadable files are also available, giving
@@ -35,6 +36,9 @@ us an alternate option, if API does incur any problem.
 What types of data-wrangling:
 
 What (major/new) libraries will be using in this project:
+dplyr()
+stringr()
+ggplot2()
 
 #####
 Project Set-up
