@@ -4,9 +4,14 @@ Team member: Benjamin Shi, Satvik Vats, April Qian Zhao, Chenxi Di
 
 Project Description
 
-Dataset:
+Dataset: 1. Mental Health in Tech Survey
+            Survey on Mental Health in the Tech Workplace in 2014
+         2. OSMI Mental Health in Tech Survey 2016
+            Data on prevalence and attitudes towards mental health among tech workers
+         3. OSMI Mental Health in Tech Survey 2017
+            Data on prevalence and attitudes towards mental health among tech workers
 
-Source:
+Source: 
 
 Target Audience:
 
