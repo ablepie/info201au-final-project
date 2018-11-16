@@ -22,7 +22,7 @@ For employers in Technology field, this project report can draw their attention 
 Three specific questions about this dataset:
 1. What plausible changes can be observed/noted throughout years?
 2. Is there relationship between number of employees in company and mental disorder?
-3.
+3. How does other factors play a role, for example age, gender, country, company type etc. ?
 
 #####
 Project Description
