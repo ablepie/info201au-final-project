@@ -34,6 +34,7 @@ The source does provide an API to use the data, thus we will be using the API. T
 us an alternate option, if API does incur any problem.  
 
 What types of data-wrangling:
+We will first decide which measurement to use and reshape each individual dataset. Then join these three dataset into one big dataset. We will also reformat the NA unit in the dataset. 
 
 What (major/new) libraries will be using in this project:
 dplyr()
