@@ -3,7 +3,7 @@ Team member: April Qian Zhao, Benjamin Shi, Chenxi Di, Satvik Vats.
 
 
 Project Description
-Data on prevalence and attitudes towards mental health among tech worker.
+The survey data aims to measure attitudes towards mental health in the tech workplace, and examine the frequency of mental health disorders among tech workers. The data can be used in gauging how mental health is viewed within the tech/IT workplace, and the prevalence of certain mental health disorders within the tech industry. The Open Sourcing Mental Illness team of volunteers use this data to drive work in raising awareness and improving conditions for those with mental health disorders in the IT workplace.
 
 Dataset: 1. Mental Health in Tech Survey
             Survey on Mental Health in the Tech Workplace in 2014
@@ -29,6 +29,8 @@ Project Description
 The format of your final product:
 
 How will you be reading in your data:
+The source does provide an API to use the data, thus we will be using the API. The downloadable files are also available thus giving
+us a alternate option, if API does incur any problem.  
 
 What types of data-wrangling:
 
