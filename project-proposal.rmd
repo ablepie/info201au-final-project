@@ -39,6 +39,8 @@ What (major/new) libraries will be using in this project:
 dplyr()
 stringr()
 ggplot2()
+stringi()
+tidyr()
 
 #####
 Project Set-up
