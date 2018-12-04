@@ -1,14 +1,19 @@
 "","disorder","current_num","past_num"
-"1","Anxiety Disorder",345,373
-"2","Mood Disorder",412,526
-"3","Stress Response Syndromes",38,31
-"4","Substance Use Disorder",39,26
-"5","Attention Deficit Hyperactivity Disorder",121,134
+"1","Anxiety Disorder",537,373
+"2","Mood Disorder",631,526
+"3","Stress Response Syndromes",78,31
+"4","Substance Use Disorder",55,26
+"5","Attention Deficit Hyperactivity Disorder",179,134
 "6","Pervasive Developmenta",1,0
-"7","Personality Disorder",36,29
+"7","Personality Disorder",78,29
 "8","Seasonal Affective Disorder",1,1
-"9","Post-traumatic Stress Disorder",69,70
-"10","Autism",6,5
+"9","Post-traumatic Stress Disorder",95,70
+"10","Autism",7,5
 "11","Traumatic Brain Injury",1,0
-"12","Psychotic Disorder",6,8
-"13","Eating Disorder",28,18
+"12","Psychotic Disorder",14,8
+"13","Eating Disorder",38,18
+"14","Obsessive-Compulsive Disorder",75,40
+"15","Addictive Disorder",59,15
+"16","Other",1,0
+"17","Dissociative Disorder",17,10
+"18","Psychotic Disorder",14,8
