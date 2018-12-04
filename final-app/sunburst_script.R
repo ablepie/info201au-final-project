@@ -1,4 +1,4 @@
-data <- data.table::fread("data/survey_2016.csv") 
+data <- data.table::fread("../data/survey_2016.csv") 
 
 #took the data from colomn 49 to 63
 test_data1 <- data[,-1:-48]

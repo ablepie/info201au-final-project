@@ -1,12 +1,10 @@
 library(data.table)
 library(dplyr)
 
-setwd("/Users/april/Desktop/git_pratice/info201au-final-project")
-
-data <- data.table::fread("data/survey_2016.csv") 
+data <- data.table::fread("../data/survey_2016.csv") 
 
 write_sunburst_data <- function(){
-  data <- data.table::fread("data/survey_2016.csv") 
+  data <- data.table::fread("../data/survey_2016.csv") 
   
   #took the data from colomn 49 to 63
   half_data <- data[,-1:-48]
@@ -26,7 +24,7 @@ write_sunburst_data <- function(){
                         `Resident State`, `Remotely`, sep="-")) %>% 
     dplyr::select(path, Age)
   
-  write.csv(final_sun, file= "final-app/app-data/final_sun.csv", row.names = FALSE)
+  write.csv(final_sun, file= "app-data/final_sun.csv", row.names = FALSE)
 }
 
 write_sunburst_data()
@@ -61,7 +59,7 @@ write_disorder_data <- function(){
 )
 
   result <- data.frame(disorder, current_num, past_num)
-  write.csv(result, file= "final-app/app-data/result_disorder.csv")
+  write.csv(result, file= "app-data/result_disorder.csv")
 }
 
 write_disorder_data()

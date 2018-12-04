@@ -5,16 +5,14 @@ library(tidyverse)
 library(stringr)
 library(sunburstR)
 
-setwd("/Users/april/Desktop/git_pratice/info201au-final-project")
-
 shinyServer(function(input, output) {
    
   output$sun <- renderSunburst({
-    sun_data <- read.csv(file = "final-app/app-data/final_sun.csv")
+    sun_data <- read.csv(file = "app-data/final_sun.csv")
     sunburst(sun_data, legend = FALSE)
 })
   output$disorder <- renderPlot({
-    disorder_data <- read.csv(file = "final-app/app-data/result_disorder.csv")
+    disorder_data <- read.csv(file = "app-data/result_disorder.csv")
     ggplot(result, aes(label = disorder, size = current_num, 
                        color = factor(sample.int(10, nrow(result), replace = TRUE)))) +
       geom_text_wordcloud() +
