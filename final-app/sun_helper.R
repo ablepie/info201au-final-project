@@ -39,10 +39,11 @@ get_current_sum <- function(illness) {
   has_illness <- str_detect(final_data$`Mental Illness`, illness)
   return(sum(has_illness))
 }
+
 # Get sum for the passed certain disorder type in past diagonise
 get_past_sum <- function(illness) {
-  has_illness <- str_detect(data[ ,52], illness)
-  return(has_illness)
+  has_illness <- str_detect(data$`If so, what condition(s) were you diagnosed with?`, illness)
+  return(sum(has_illness))
 }
 
 write_disorder_data <- function(){
@@ -52,10 +53,16 @@ write_disorder_data <- function(){
                 "Seasonal Affective Disorder", "Post-traumatic Stress Disorder", "Autism",
                 "Traumatic Brain Injury", "Psychotic Disorder", "Eating Disorder", "Obsessive-Compulsive Disorder",
                 "Addictive Disorder", "Other", "Dissociative Disorder", "Psychotic Disorder")
-  current_num <- lapply(paste(disorder, collapse = "|"), get_current_sum)
-  past_num <- get_past_sum(paste(disorder, collapse = "|"))
+  current_num <- vector("integer")
+  for (i in 1:length(disorder)) {
+    current_num[i] <- get_current_sum(disorder[i])
+  }
+  past_num <- vector("integer")
+  for (i in 1:length(disorder)) {
+    past_num[i] <- get_past_sum(disorder[i])
+  }
   result <- data.frame(disorder, current_num, past_num)
-  write.csv(result, file= "app-data/result_disorder.csv")
+  write.csv(result, file = "app-data/result_disorder.csv")
 }
 
 write_disorder_data()
