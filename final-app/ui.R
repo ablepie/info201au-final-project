@@ -19,7 +19,10 @@ shinyUI(
     tabPanel("Corr"),
     tabPanel("Ranking",
              sidebarPanel(
-               
+               radioButtons(
+                 "current_past", "Choose to see most common mental illness in OSMI, 2016",
+                 choices = list("Current" = "current_num", "Past" = "past_num"))
+               )
              ),
              mainPanel(
                tabsetPanel(type = "tabs",
@@ -30,5 +33,5 @@ shinyUI(
                )
              )
   )
-  )
 )
+
