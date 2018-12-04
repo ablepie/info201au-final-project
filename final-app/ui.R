@@ -16,6 +16,18 @@ shinyUI(
              )
              ),
     tabPanel("Corr"),
-    tabPanel("Ranking")
+    tabPanel("Ranking",
+             sidebarPanel(
+               
+             ),
+             mainPanel(
+               tabsetPanel(type = "tabs",
+                           tabPanel("Plot",
+                                    plotOutput("disorder")),
+                           tabPanel("Summary"),
+                           tabPanel("Table")
+               )
+             )
   )
   )
+)

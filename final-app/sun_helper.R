@@ -3,6 +3,8 @@ library(dplyr)
 
 setwd("/Users/april/Desktop/git_pratice/info201au-final-project")
 
+data <- data.table::fread("data/survey_2016.csv") 
+
 write_sunburst_data <- function(){
   data <- data.table::fread("data/survey_2016.csv") 
   
@@ -24,7 +26,43 @@ write_sunburst_data <- function(){
                         `Resident State`, `Remotely`, sep="-")) %>% 
     dplyr::select(path, Age)
   
-  write.csv(final_sun, file= "final-app/data/final_sun.csv", row.names = FALSE)
+  write.csv(final_sun, file= "final-app/app-data/final_sun.csv", row.names = FALSE)
 }
 
 write_sunburst_data()
+
+write_disorder_data <- function(){
+  disorder <- c("Anxiety Disorder", "Mood Disorder", "Stress Response Syndromes", "Substance Use Disorder",
+                                                "Attention Deficit Hyperactivity Disorder", "Pervasive Developmenta", "Personality Disorder",
+                                                "Seasonal Affective Disorder", "Post-traumatic Stress Disorder", "Autism",
+                                                "Traumatic Brain Injury", "Psychotic Disorder", "Eating Disorder")
+
+  data_49 <- data[,49]
+  colnames(data_49) <- "disorder"
+  data_52 <- data[,52]
+  colnames(data_52) <- "disorder"
+  
+  current_num <- c(sum(str_detect(data_49$disorder, "Anxiety Disorder")), sum(str_detect(data_49$disorder,"Mood Disorder")),
+                 sum(str_detect(data_49$disorder, "Stress Response Syndromes")),sum(str_detect(data_49$disorder, "Substance Use Disorder")),
+                 sum(str_detect(data_49$disorder, "Attention Deficit Hyperactivity Disorder")),sum(str_detect(data_49$disorder, "Pervasive Developmenta")),
+                 sum(str_detect(data_49$disorder, "Personality Disorder")), sum(str_detect(data_49$disorder, "Seasonal Affective Disorder")),
+                 sum(str_detect(data_49$disorder, "Post-traumatic Stress Disorder")), sum(str_detect(data_49$disorder, "Autism")),
+                 sum(str_detect(data_49$disorder, "Traumatic Brain Injury")), sum(str_detect(data_49$disorder, "Psychotic Disorder")),
+                 sum(str_detect(data_49$disorder, "Eating Disorder"))
+)
+
+  past_num <- c(sum(str_detect(data_52$disorder, "Anxiety Disorder")), sum(str_detect(data_52$disorder,"Mood Disorder")),
+              sum(str_detect(data_52$disorder, "Stress Response Syndromes")),sum(str_detect(data_52$disorder, "Substance Use Disorder")),
+              sum(str_detect(data_52$disorder, "Attention Deficit Hyperactivity Disorder")),sum(str_detect(data_52$disorder, "Pervasive Developmenta")),
+              sum(str_detect(data_52$disorder, "Personality Disorder")), sum(str_detect(data_52$disorder, "Seasonal Affective Disorder")),
+              sum(str_detect(data_52$disorder, "Post-traumatic Stress Disorder")), sum(str_detect(data_52$disorder, "Autism")),
+              sum(str_detect(data_52$disorder, "Traumatic Brain Injury")), sum(str_detect(data_52$disorder, "Psychotic Disorder")),
+              sum(str_detect(data_52$disorder, "Eating Disorder"))
+)
+
+  result <- data.frame(disorder, current_num, past_num)
+  write.csv(result, file= "final-app/app-data/result_disorder.csv")
+}
+
+write_disorder_data()
+
