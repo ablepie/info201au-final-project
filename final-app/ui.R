@@ -27,7 +27,8 @@ shinyUI(
              mainPanel(
                tabsetPanel(type = "tabs",
                            tabPanel("Plot",
-                                    plotOutput("disorder")),
+                                    wordcloud2Output("disorder", width = "100%", height = "400px")
+                           ),
                            tabPanel("Summary"),
                            tabPanel("Table")
                )
