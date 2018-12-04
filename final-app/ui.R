@@ -23,16 +23,10 @@ shinyUI(
                  "current_past", "Choose to see most common mental illness in OSMI, 2016",
                  choices = list("Current" = "current_num", "Past" = "past_num"))
                )
-             ),
-             mainPanel(
-               tabsetPanel(type = "tabs",
-                           tabPanel("Plot",
-                                    wordcloud2Output("disorder", width = "100%", height = "400px")
-                           ),
-                           tabPanel("Summary"),
-                           tabPanel("Table")
+             ,
+             mainPanel(wordcloud2Output("disorder", width = "100%", height = "400px")
+                           )
                )
              )
   )
-)
 
