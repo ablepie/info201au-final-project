@@ -6,7 +6,7 @@
 
 * [The first draft of final project proposal](project-proposal.rmd)
 * [The dataset we used in the study](https://www.kaggle.com/osmi/mental-health-in-tech-2016/version/1)
-* [The shiny web application on server]()
+* [The shiny web application on server](https://benjamins.shinyapps.io/Mental_Heath_in_Tech/)
 * [The conclusion of the study](demo/project_conclusion.md)
 ***
 ### The background of the study.
@@ -27,7 +27,7 @@
 ### Suggestion and conclusion.
 * After thougtful analysis on the survey. We reach out following conclusions:
  +
-
+*
 ***
 ### Looking forward.
 ![stock picture for question/opinion](demo/help.png)

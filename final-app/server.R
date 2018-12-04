@@ -16,7 +16,7 @@ shinyServer(function(input, output) {
     disorder_data <- read.csv(file = "app-data/result_disorder.csv")
     text_data <- disorder_data %>% 
       select(disorder, input$current_past)
-      wordcloud2(text_data, color = "random-light", size = 1, gridSize = 1, fontWeight = 600,
+      wordcloud2(text_data, color = "random-light", size = 4, gridSize = 2, fontWeight = 400,
                backgroundColor = "transparent")
   })
 })
