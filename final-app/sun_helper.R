@@ -13,7 +13,7 @@ write_sunburst_data <- function(){
   colnames(final_data) <- c("Age", "Position", "Mental Illness", "Maybe Illness", "Gender", 
                             "Country of Resident", "Resident State", "Remotely")
   
-  # Merge doubtless mentall illness and doubtful mental illness, both are self diagnosed 
+  # Merge doubtless mentall illness and doubtful mental illness
   final_data <-
     final_data %>%
     mutate(`Mental Illness` = paste0(`Mental Illness`, `Maybe Illness`)) %>%
@@ -34,7 +34,7 @@ write_sunburst_data <- function(){
 
 write_sunburst_data()
 
-# Get sum for the passed disorder type in current self diagonise
+# Get sum for the passed disorder type in current diagonise
 get_current_sum <- function(illness) {
   has_illness <- str_detect(final_data$`Mental Illness`, illness)
   return(sum(has_illness))
