@@ -13,36 +13,47 @@ shinyUI(
     theme = shinytheme("superhero"),
     title = "Mental Health in Tech industry",
     tabPanel("Ring", 
-              sunburstOutput("sun", width = "100%", height = "500px"),
-              sidebarPanel(
-                h4("This shows the percentage of each observations in the survey,
-                  from each job position, to what kind of disorder, to gender,
-                  to which country, to state, to disorder frequency.")
-                )
+             sidebarPanel(tags$div(class="panel panel-primary",
+                      tags$div(class="panel-heading",
+                               tags$h3("Rankings",class="panel-title")
+                      ),
+                      tags$div("Click on the interactive ring to explore the dataset.", class="panel-body")
+              )),
+              mainPanel(sunburstOutput("sun", width = "100%", height = "600px"))
               ),
-    tabPanel("Regression"
+    tabPanel("Regression",
+             tags$div(class = "jumbotron", 
+                      tags$h1("Jumbotron"),
+                      tags$p(tags$a("Learn more", class='btn btn-primary btn-lg'))
+             )
+             # render the chart or graph here.
              ),
     tabPanel("Rankings",
              sidebarPanel(
+               tags$div(class="panel panel-primary",
+                 tags$div(class="panel-heading",
+                   tags$h3("Rankings",class="panel-title")
+                 ),
+                 tags$div("Choose to see most common mental illness in OSMI, 2016. (exclude Anxiety and Mood disorder here)", class="panel-body"),
+                 tags$div("Current shift to the most common disorder in 2016", class="panel-body"),
+                 tags$div("Past shift to the most the participants used to have", class="panel-body")
+               ),
                radioButtons(
-                 "current_past", "Choose to see most common mental illness in OSMI, 2016. (exclude Anxiety
-                 and Mood disorder here)", choices = list("Current" = "current_num", "Past" = "past_num")
+                 "current_past", " ", choices = list("Current" = "current_num", "Past" = "past_num")
                )
              ),
              mainPanel(wordcloud2Output("disorder", width = "100%", height = "500px")
              )
              ),
     tabPanel("Conclusion", 
-              mainPanel(
-                tags$div(
+                tags$div(class = "jumbotron", 
                          tags$h2("There are what we find from the dataset"),
-                         tags$img(src = "https://www.njartscouncil.org/wp-content/uploads/2018/04/getgwtgw.jpg", height = 400, align = "top"),
-                         tags$br(),
                          tags$ol(
                            tags$li("We examined the mental health survey from OSMI (licensed under a Creative Commons 
                                    Attribution-ShareAlike 4.0 International) data. The survey dataset is autonomous and anonymous, 
-                                   which follows Principles of research ethics."),
+                                   which follows Principles of research ethics."), 
                            tags$ul(
+                              tags$li(tags$a(href="https://osmihelp.org/", "Open Source Mental Illness.")),
                               tags$li("We found Back End Developer are most 
                                            likely to have mental health problem. (16.4%) Fron End Developer is the type of work 
                                            position with second highest risk of mental health problem."),
@@ -50,8 +61,8 @@ shinyUI(
                                            there is no obvious relationship between working location and risk of self-diagonsed mental 
                                            health problem.")
                                 ),
-                           tags$li("Until the survey in 2016, the most common mental disorder (self-diagonsed) are Mood Disorder and Anxiety Disorder. Besides, we found ADHD(Attention 
-                                    Deficit Hyperctivity Disorder) and PTSD(Post-traumatic Stress Disorder) are 3rd and 4th most
+                           tags$li("Until the survey in 2016, the most common mental disorder (self-diagonsed) are Mood Disorder and Anxiety Disorder. Besides, we found ADHD (Attention 
+                                    Deficit Hyperctivity Disorder) and PTSD (Post-traumatic Stress Disorder) are 3rd and 4th most
                                    common disorder. However, there are some concerns for bias."),
                            tags$ul(
                              tags$li("First, the number of response is limited:
@@ -60,14 +71,11 @@ shinyUI(
                              tags$li("Second, Response bias exists and affects the accuracy. Since responsers may feel pressure to give answers
                                       that are socially acceptable. Thus, further study will need more dataset to combine. More questions
                                       could be explored deeply.")
-                           )
+                           ))
                          )
-                         )
-                )
               ),
     tabPanel("Look forward",
-             mainPanel(
-               tags$div(
+               tags$div(class = "jumbotron",
                  tags$h2("What we can do?"),
                  tags$span("Mental disorder is normal and curable"),
                  tags$ol(
@@ -89,7 +97,6 @@ shinyUI(
                    tags$li("Live in a health and active lifestyle.")
                  )
                )
-             )
              )
           )
 )
