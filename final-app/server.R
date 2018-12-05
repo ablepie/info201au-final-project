@@ -24,7 +24,7 @@ shinyServer(function(input, output) {
   
   # This render text output for discussion of our current analysis
   output$discussion <- renderText({
-    h4("We examined the mental health survey from OSMI(licensed under a Creative Commons 
+    paste0("We examined the mental health survey from OSMI(licensed under a Creative Commons 
            Attribution-ShareAlike 4.0 International) data. The survey dataset is autonomous and anonymous, 
            which follows Principles of research ethics. We found Back End Developer are most 
            likely to have mental health problem. (16.4%) Fron End Developer is the type of work 
