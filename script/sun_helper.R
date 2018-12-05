@@ -1,8 +1,9 @@
 library(data.table)
 library(dplyr)
 
+# process the mental disorder survey in 2016.
 write_sunburst_data <- function(){
-  data <- data.table::fread("app-data/survey_2016.csv") 
+  data <- data.table::fread("../info201au-final-project/data/survey_2016.csv") 
   
   
   # Select the data columns for age, gender, work position, country/state they work in and whether remote work
