@@ -1,6 +1,6 @@
 # INFO201AU-FINAL-PROJECT
 
-## Group members: **April Zhao**, Benjamin Shi, Chenxi Di, Satvik Vats.
+## Group members: April Zhao, Benjamin Shi, Chenxi Di, Satvik Vats.
 
 ### Please check the following links to see more information about our project.
 
@@ -10,17 +10,16 @@
 * [The conclusion of the study](demo/project_conclusion.md)
 
 ### The background of the study.
-<center>
 ![stock picture for question/opinion](demo/mental_disorder.jpg)
-</center>
+
 * “Love and work are the cornerstones of our humanness.” Sigmund Freud was one of the first to recognize the connection between work and mental health. However, the ubiquitous globlization triggers the world-wide "race to the bottom". Providing a health workplace loses it's significance.
 * The study guides us to take a close look in the IT industry. Exploring potential correlation between different factors in the workplace and mental disorder.
+
 ***
 
 ### The dataset and about.
-<center>
 ![stock picture for question/opinion](demo/survey.png)
-</center>
+
 * The dataset used for this study is the work of [OSMI](https://osmihelp.org/). OSMI is a dedicated data source on mental illlness and disorder. Three survery were conducted on 2014, 2016 and 2017, focusing on the mental health in IT industry.
 * The survey in 2016 is the most complete, diverse and reasonable dataset in all three surveys. It involves 1434 participants. Those participants were asked to answer up to 63 questions ranging from number of employees in the company to the age group.
 * After productive discussion, we decide to use the dataset in 2016 and drop off other surveys. We do this for two reasons.
@@ -37,7 +36,7 @@
 * Ethical issues: We examined the mental health survey from OSMI(licensed under a Creative Commons Attribution-ShareAlike 4.0 International) data. The survey dataset is autonomous and anonymous, which follows Principles of research ethics.  
 * Concerns for bias:
   + First, the number of response is limited: only 1570 people reply the survey, only 997 of them answering yes or maybe when   asked if they have mental disorder. The limited response and unanswer rate makes the data not very representative. 
-  + Second, Response bias exists and affects the accuracy. Since responsers may feel pressure to give answers that are           socially acceptable. Thus, further study will need more dataset to combine. More questions could be explored deeply.
+  + Second, Response bias exists and affects the accuracy. Since responsers may feel pressure to give answers that are not socially acceptable. Thus, further study will need more dataset to combine. More questions could be explored deeply.
   
 ***
 ### Looking forward.
