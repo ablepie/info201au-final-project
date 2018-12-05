@@ -2,7 +2,8 @@ library(shiny)
 library(shinythemes)
 library(sunburstR)
 library(shinydashboard)
-
+library(wordcloud2)
+library(sunburstR)
 shinyUI(
   navbarPage(
     theme = shinytheme("superhero"),

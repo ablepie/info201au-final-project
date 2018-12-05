@@ -1,14 +1,14 @@
 library(data.table)
 library(dplyr)
 
-
 write_sunburst_data <- function(){
-  data <- data.table::fread("../data/survey_2016.csv") 
+  data <- data.table::fread("app-data/survey_2016.csv") 
+  
   
   # Select the data columns for age, gender, work position, country/state they work in and whether remote work
   # if self-diagnosed with mental health
   final_data <- data[, c(56, 62, 49, 50, 57, 60, 61, 63)]
-  
+  remove(data)
   # Rename the header of the data for sunburst graph
   colnames(final_data) <- c("Age", "Position", "Mental Illness", "Maybe Illness", "Gender", 
                             "Country of Resident", "Resident State", "Remotely")
