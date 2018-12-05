@@ -5,8 +5,8 @@ account: benjamins
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 602783
-bundleId: 1738778
+bundleId: 1740930
 url: https://benjamins.shinyapps.io/final-app/
-when: 1543915689.90439
+when: 1543969629.03208
 asMultiple: FALSE
 asStatic: FALSE

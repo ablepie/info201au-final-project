@@ -3,7 +3,7 @@ library(dplyr)
 
 # process the mental disorder survey in 2016.
 write_sunburst_data <- function(){
-  data <- data.table::fread("../info201au-final-project/data/survey_2016.csv") 
+  data <- data.table::fread("../data/survey_2016.csv") 
   
   
   # Select the data columns for age, gender, work position, country/state they work in and whether remote work
@@ -30,7 +30,7 @@ write_sunburst_data <- function(){
                         `Resident State`, `Remotely`, sep="-")) %>% 
     select(path, Age)
   
-  write.csv(final_sun, file= "app-data/final_sun.csv", row.names = FALSE)
+  write.csv(final_sun, file= "../final-app/app-data/final_sun.csv", row.names = FALSE)
 }
 
 write_sunburst_data()
