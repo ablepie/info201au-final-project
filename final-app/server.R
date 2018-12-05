@@ -22,7 +22,7 @@ shinyServer(function(input, output) {
       disorder_data %>% 
       select(disorder, input$current_past) %>% # exclude disorder(Anxiety, Mood) to display better
       filter(disorder != "Mood Disorder" & disorder != "Anxiety Disorder") 
-    wordcloud2(text_data, color = "random-light", size = 0.2, gridSize = 4, fontWeight = 400,
+    wordcloud2(text_data, color = "random-light", size = 0.3, gridSize = 4, fontWeight = 600, rotateRatio = 0,
                backgroundColor = "transparent")
   })
   

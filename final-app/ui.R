@@ -46,12 +46,10 @@ shinyUI(
                  tags$div(class="panel-heading",
                    tags$h3("Rankings",class="panel-title")
                  ),
-                 tags$div("Choose to see most common mental illness in OSMI, 2016. (exclude Anxiety and Mood disorder here)", class="panel-body"),
-                 tags$div("Current shift to the most common disorder in 2016", class="panel-body"),
-                 tags$div("Past shift to the most the participants used to have", class="panel-body")
+                 tags$div("Choose to see most common mental illness in OSMI, 2016. (exclude Anxiety and Mood disorder here)", class="panel-body")
                ),
                radioButtons(
-                 "current_past", " ", choices = list("Current" = "current_num", "Past" = "past_num")
+                 "current_past", " ", choices = list("Current shift to the most common disorder in 2016" = "current_num", "Past shift to the most the participants used to have" = "past_num")
                )
              ),
              mainPanel(wordcloud2Output("disorder", width = "100%", height = "500px")
