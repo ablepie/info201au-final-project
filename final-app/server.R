@@ -1,3 +1,6 @@
+# The server.R file processes the dataset and gives informative
+# visualization to the user. According to the dataset and user input,
+# it can produce different visualization and description. 
 library(shiny)
 library(data.table)
 library(dplyr)
@@ -5,6 +8,7 @@ library(tidyverse)
 library(stringr)
 library(sunburstR)
 library(wordcloud2)
+
 shinyServer(function(input, output) {
   # This render the sunburst
   output$sun <- renderSunburst({
@@ -21,5 +25,7 @@ shinyServer(function(input, output) {
     wordcloud2(text_data, color = "random-light", size = 0.2, gridSize = 4, fontWeight = 400,
                backgroundColor = "transparent")
   })
+  
+  
 })
 

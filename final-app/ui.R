@@ -1,9 +1,13 @@
+# The ui.R file processes regulates the display of the application.
+# According to the dataset and user input,
+# it can produce different visualization and layout 
 library(shiny)
 library(shinythemes)
 library(sunburstR)
 library(shinydashboard)
 library(wordcloud2)
 library(sunburstR)
+
 shinyUI(
   navbarPage(
     theme = shinytheme("superhero"),
@@ -16,7 +20,8 @@ shinyUI(
                   to which country, to state, to disorder frequency.")
                 )
               ),
-    tabPanel("Regression"),
+    tabPanel("Regression"
+             ),
     tabPanel("Rankings",
              sidebarPanel(
                radioButtons(
@@ -86,6 +91,6 @@ shinyUI(
                  )
                )
              )
-             )# making conslusion about the study. 
+             )
           )
 )
