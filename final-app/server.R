@@ -14,8 +14,11 @@ shinyServer(function(input, output) {
   # This render word cloud to display frequency of each type of disorder in past and current
   output$disorder <- renderWordcloud2({
     disorder_data <- read.csv(file = "app-data/result_disorder.csv")
-    text_data <- disorder_data %>% select(disorder, input$current_past)
-    wordcloud2(text_data, color = "random-light", size = 0.5, gridSize = 2, fontWeight = 400,
+    text_data <- 
+      disorder_data %>% 
+      select(disorder, input$current_past) %>% # exclude disorder(Anxiety, Mood) to display better
+      filter(disorder != "Mood Disorder" & disorder != "Anxiety Disorder") 
+    wordcloud2(text_data, color = "random-light", size = 0.2, gridSize = 4, fontWeight = 400,
                backgroundColor = "transparent")
   })
   
