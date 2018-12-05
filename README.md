@@ -10,7 +10,7 @@
 * [The conclusion of the study](demo/project_conclusion.md)
 
 ### The background of the study.
-![stock picture for question/opinion](demo/mental_disorder.jpg)
+![](demo/mental_disorder.jpg)
 
 * “Love and work are the cornerstones of our humanness.” Sigmund Freud was one of the first to recognize the connection between work and mental health. However, the ubiquitous globlization triggers the world-wide "race to the bottom". Providing a health workplace loses it's significance.
 * The study guides us to take a close look in the IT industry. Exploring potential correlation between different factors in the workplace and mental disorder.
@@ -18,7 +18,7 @@
 ***
 
 ### The dataset and about.
-![stock picture for question/opinion](demo/survey.png)
+![](demo/survey.png)
 
 * The dataset used for this study is the work of [OSMI](https://osmihelp.org/). OSMI is a dedicated data source on mental illlness and disorder. Three survery were conducted on 2014, 2016 and 2017, focusing on the mental health in IT industry.
 * The survey in 2016 is the most complete, diverse and reasonable dataset in all three surveys. It involves 1434 participants. Those participants were asked to answer up to 63 questions ranging from number of employees in the company to the age group.
@@ -28,7 +28,8 @@
 
 ***
 ### Conclusion and Discussion.
-![stock picture for conclusion](demo/brain.jpg)
+![](demo/brain.jpg)
+
 * After thougtful analysis on the survey. We reach out following conclusions:
   + Back End Developer are most likely to have mental health problem. (16.4%) Front End Developer is the type of work position with second highest risk of mental health problem.
   + By regression analysis, we found there is no obvious relationship between working location and risk of mental health problem.
@@ -41,8 +42,7 @@
 
 ***
 ### Looking forward.
-
-![stock picture for question/opinion](demo/help.png)
+![](demo/help.png)
 
 * Things you can do:
   - You can use following resource for information and help.
