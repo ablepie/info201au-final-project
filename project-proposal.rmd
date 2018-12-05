@@ -1,5 +1,5 @@
 # Final Proposal
-Team member: April Qian Zhao, Benjamin Shi, Chenxi Di, Satvik Vats.
+Team member: **April Qian Zhao**, Benjamin Shi, Chenxi Di, Satvik Vats.
 
 
 ## Project Description
@@ -41,10 +41,10 @@ The format of your final product:
    We will first decide which measurement to use and reshape each individual dataset. Then join these three dataset into one big dataset. We will also reformat the NA unit in the dataset.
 
 ### What (major/new) libraries will be using in this project:
-   stringr()
-   ggplot2()
-   stringi()
-   tidyr()
+   * stringr()
+   * ggplot2()
+   * stringi()
+   * tidyr()
 
 ### What questions, if any, will you be answering with statistical analysis/machine learning?
    1. With the help from machine learning, we can accurately anticipate the possibility that if an employee would be negatively influenced by mental disorder bases on gender, size of the company and other measurement about his or her job/working environment. 
@@ -55,8 +55,8 @@ The format of your final product:
 
 ***
 ## Project Set-up
-GitHub:
-   All members are added to repository: checked
-   5 GitHub Issues created : checked
-private Slack channel: checked
+* GitHub:
+    + All members are added to repository: checked
+    + 5 GitHub Issues created : checked
+* private Slack channel: checked
 
