@@ -35,8 +35,7 @@ shinyUI(
     tabPanel("Conclusion", 
               mainPanel(
                 tags$div(
-                         tags$p("There are what we find from the dataset"),
-                         tags$br(),
+                         tags$h2("There are what we find from the dataset"),
                          tags$img(src = "https://www.njartscouncil.org/wp-content/uploads/2018/04/getgwtgw.jpg", height = 400, align = "top"),
                          tags$br(),
                          tags$ol(
@@ -79,7 +78,7 @@ shinyUI(
                      tags$li(tags$a(href="https://suicidepreventionlifeline.org/", "The suicide pervention Lifeline")),
                      tags$li(tags$a(href="https://adaa.org/", "Anxiety and Depression Association of America (ADAA)")),
                      tags$li(tags$a(href="https://www.kingcounty.gov/depts/community-human-services/mental-health-substance-abuse/services/mental-health.aspx",
-                                    "[King county mental health support"))
+                                    "King county mental health support"))
                    ),
                    tags$li("Use social media to help spread awareness and advocate for social change."),
                    tags$li("Know your rights."),
