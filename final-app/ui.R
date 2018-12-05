@@ -10,17 +10,27 @@ library(sunburstR)
 
 shinyUI(
   navbarPage(
-    theme = shinytheme("superhero"),
+    theme = shinytheme("superhero"), # Apply the shiny them 
     title = "Mental Health in Tech industry",
+    
+    # The first tab is dedicated to a visualization of dataset. 
+    # it shows every participants of the survey in proportion to 
+    # the quesitons. 
     tabPanel("Ring", 
-             sidebarPanel(tags$div(class="panel panel-primary",
+             # Nest a penal box in the sidebar
+             sidebarPanel(
+               tags$div(class="panel panel-primary",
                       tags$div(class="panel-heading",
                                tags$h3("Rankings",class="panel-title")
                       ),
                       tags$div("Click on the interactive ring to explore the dataset.", class="panel-body")
               )),
-              mainPanel(sunburstOutput("sun", width = "100%", height = "600px"))
+              mainPanel(sunburstOutput("sun", width = "100%", height = "600px")) # visz
               ),
+    
+    # The second tab is dedicated to a linear regression and correlation study. 
+    # Some variations of the dataset were exame to test if it contribute the likelihood 
+    # of mental disorder. 
     tabPanel("Regression",
              tags$div(class = "jumbotron", 
                       tags$h1("Jumbotron"),
@@ -28,6 +38,8 @@ shinyUI(
              )
              # render the chart or graph here.
              ),
+    
+    # The third tab is a ranking a most common disorders. 
     tabPanel("Rankings",
              sidebarPanel(
                tags$div(class="panel panel-primary",
@@ -45,9 +57,11 @@ shinyUI(
              mainPanel(wordcloud2Output("disorder", width = "100%", height = "500px")
              )
              ),
+    
+    # The fourth tab is some observaton and conclusion about the dataset. 
     tabPanel("Conclusion", 
                 tags$div(class = "jumbotron", 
-                         tags$h2("There are what we find from the dataset"),
+                         tags$h2("There are what we find from the dataset", class="text-primary"),
                          tags$ol(
                            tags$li("We examined the mental health survey from OSMI (licensed under a Creative Commons 
                                    Attribution-ShareAlike 4.0 International) data. The survey dataset is autonomous and anonymous, 
@@ -63,7 +77,7 @@ shinyUI(
                                 ),
                            tags$li("Until the survey in 2016, the most common mental disorder (self-diagonsed) are Mood Disorder and Anxiety Disorder. Besides, we found ADHD (Attention 
                                     Deficit Hyperctivity Disorder) and PTSD (Post-traumatic Stress Disorder) are 3rd and 4th most
-                                   common disorder. However, there are some concerns for bias."),
+                                   common disorder. However, there are some concerns for bias.", class="text-warning"),
                            tags$ul(
                              tags$li("First, the number of response is limited:
                                       only 1570 people reply the survey, only 997 of them answering yes or maybe when asked if they have mental
@@ -74,9 +88,11 @@ shinyUI(
                            ))
                          )
               ),
+    
+    # There are suggestions to the target audience. 
     tabPanel("Look forward",
                tags$div(class = "jumbotron",
-                 tags$h2("What we can do?"),
+                 tags$h2("What we can do?", class="text-primary"),
                  tags$span("Mental disorder is normal and curable"),
                  tags$ol(
                    tags$li("You can use following resource for information and help."),
