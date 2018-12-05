@@ -20,16 +20,16 @@ shinyUI(
              sidebarPanel(
                radioButtons(
                  "current_past", "Choose to see most common mental illness in OSMI, 2016",
-                 choices = list("Current" = "current_num", "Past" = "past_num"))
-             )
-             ,
+                 choices = list("Current" = "current_num", "Past" = "past_num")
+               )
+             ),
              mainPanel(wordcloud2Output("disorder", width = "100%", height = "500px")
-                       )
-               ),
+             )
+             ),
     tabPanel("Conclusion"), # making conslusion about the study. 
-    tabPanel("Looking forward", 
+    tabPanel("Discussion", 
               mainPanel(
-               # making some general suggestions. 
+               textOutput("discussion", ) 
               )
           )
         )
