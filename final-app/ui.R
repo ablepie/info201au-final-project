@@ -33,10 +33,32 @@ shinyUI(
     # of mental disorder. 
     tabPanel("Regression",
              tags$div(class = "jumbotron", 
-                      tags$h1("Jumbotron"),
-                      tags$p(tags$a("Learn more", class='btn btn-primary btn-lg'))
-             )
-             # render the chart or graph here.
+                      tags$h2("Summary about correlation.", class="text-primary"),
+                      tags$div(
+                        tags$ul(
+                          tags$li("In the linear regression model about Mental illness and number of employees"),
+                          tags$li("Multiple R-squared:  0.008306,	Adjusted R-squared:  0.003956 "), 
+                          tags$li(tags$code("lm(formula = ill ~ number, data = study_set)")),
+                          tags$li("There is a weak positive relationship", class="text-success")
+                        ), 
+                        tags$div(
+                          tags$ul(
+                            tags$li("In the linear regression model about Mental illness and number of age"),
+                            tags$li("Multiple R-squared:  5.504e-05,	Adjusted R-squared:  -0.000819 "), 
+                            tags$li(tags$code("lm(formula = ill ~ age, data = study_set)")),
+                            tags$li("There is not likely a connection between", class="text-success")
+                          )
+                        ),
+                          tags$div(
+                            tags$ul(
+                              tags$li("In the linear regression model about Mental illness and number of job position"),
+                              tags$li("Multiple R-squared:  5.504e-05,	Adjusted R-squared:  -0.000819 "), 
+                              tags$li(tags$code("lm(formula = ill ~ position, data = study_set)")),
+                              tags$li("There is a not likely any connection", class="text-success")
+                            )
+                          )
+                        )
+                      )
              ),
     
     # The third tab is a ranking a most common disorders. 

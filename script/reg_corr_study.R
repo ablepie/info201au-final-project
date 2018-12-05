@@ -80,11 +80,17 @@ to_study_subset <- function() {
 # function call 
 
 study_subset <- to_study_subset()
-scatter.smooth(x = study_subset$number, y=study_subset$ill, main="Relationship between mental health to 
-               number of employee")
-linearMod <- lm(ill ~ number, data=study_set)
+
+linearMod_1 <- lm(ill ~ age, data=study_set)
 print(linearMod)
-# the function takes no parameter and process the data.
-tranform_data <- function(study_subset){
-  
-}
+summary(linearMod)
+
+linearMod_2 <- lm(ill ~ age, data=study_set)
+print(linearMod_2)
+summary(linearMod_2)
+
+
+linearMod_3 <- lm(ill ~ age, data=study_set)
+print(linearMod_3)
+summary(linearMod_3)
+
