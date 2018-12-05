@@ -62,8 +62,8 @@ write_disorder_data <- function(){
   for (i in 1:length(disorder)) {
     past_num[i] <- get_past_sum(disorder[i])
   }
-  result <- data.frame(disorder, current_num, past_num)
-  write.csv(result, file = "app-data/result_disorder.csv")
+  result <- data.frame(disorder, current_num, past_num) 
+  write.csv(result, file = "../final-app/app-data/result_disorder.csv")
 }
 
 write_disorder_data()
