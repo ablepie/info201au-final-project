@@ -26,7 +26,17 @@ shinyUI(
                       tags$div(class="panel-heading",
                                tags$h3("Rankings",class="panel-title")
                       ),
-                      tags$div("Click on the interactive ring to explore the dataset.", class="panel-body")
+                      tags$div(
+                        tags$div( 
+                          tags$p("Click on the interactive ring to explore the dataset."),
+                          tags$ul(
+                          tags$li("The most inner circle represents type of job the participant does."),
+                          tags$li("The second circle represents type of mental disorder the participant has."),
+                          tags$li("The third circle represents the sex of participant"),
+                          tags$li("The fourth circle represents the nationality of the participant")
+                          ),
+                        class="panel-body")
+                      )
               )),
               mainPanel(sunburstOutput("sun", width = "100%", height = "600px")) # visz
               ),
