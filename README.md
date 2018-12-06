@@ -34,14 +34,15 @@
 
 * After thougtful analysis on the survey. We reach out following conclusions:
   + Back End Developer are most likely to have mental health problem. (16.4%) Front End Developer is the type of work position with second highest risk of mental health problem.
+  + We study on the correlation between job position(back-end developer, front-end developer,etc), age and number of employees in the company. The result is included in [shiny web app](https://benjamins.shinyapps.io/final-app/).  
   + In the correlation/regression study no strong relationship was find between number of employee in the company/ participant's age/ job position. No regression can be further make. 
-  + Until the survey in 2016, the most common mental disorder are Mood Disorder and Anxiety Disorder. Besides, we found ADHD(Attention Deficit Hyperctivity Disorder) and PTSD(Post-traumatic Stress Disorder) are 3rd and 4th most
-    common disorder.
+  + The statistical analysis has limits. If more advance regression model can be used to approximate the relationship between mental disorder and other variables, there might be non-linear, advanced relationship exists. 
+  + Until the survey in 2016, the most common mental disorder are Mood Disorder and Anxiety Disorder. Besides, we found ADHD(Attention Deficit Hyperctivity Disorder) and PTSD(Post-traumatic Stress Disorder) are 3rd and 4th most common disorder.
 * Ethical issues: We examined the mental health survey from OSMI(licensed under a Creative Commons Attribution-ShareAlike 4.0 International) data. The survey dataset is autonomous and anonymous, which follows Principles of research ethics.
-* Since the survey is voluntary. The participants of the survey were most likely have personal experience about mental disoder. That's to say, the porportion of participants who suffer mental disorder is higher then the real proportion. 
 * Concerns for bias:
-  + First, the number of response is limited: only 1435 people reply the survey, only 997 of them answering yes or maybe when  asked if they have mental disorder. The limited response and unanswer rate makes the data not very representative.
+  + First, the number of response is limited: only 1435 people reply the survey, only 997 of them answering yes or maybe when  asked if they have mental disorder. 
   + Second, Response bias exists and affects the accuracy. Since responsers may feel pressure to give answers that are not socially acceptable. Thus, further study will need more dataset to combine. More questions could be explored deeply.
+  + Since the survey is voluntary. The participants of the survey were most likely have personal experience about mental disoder. That's to say, the porportion of participants who suffer mental disorder is higher then the real proportion. 
 
 ***
 ### Looking forward.
