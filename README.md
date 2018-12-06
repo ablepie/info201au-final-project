@@ -31,7 +31,7 @@
 ***
 ### Conclusion and Discussion.
 ![](demo/brain.jpg)
-
+* Mental disorder is normal and curable The data summary reveals that 92% of the participants find a enbracing/health workplace is desirable and helps them to focus on work.That explains why well-konwn Tech companys are dedicated to create a creation-provoking, healthy workplace.
 * After thougtful analysis on the survey. We reach out following conclusions:
   + Back End Developer are most likely to have mental health problem. (16.4%) Front End Developer is the type of work position with second highest risk of mental health problem.
   + We study on the correlation between job position(back-end developer, front-end developer,etc), age and number of employees in the company. The result is included in [shiny web app](https://benjamins.shinyapps.io/final-app/).  
