@@ -31,30 +31,30 @@ shinyUI(
     # The second tab is dedicated to a linear regression and correlation study. 
     # Some variations of the dataset were exame to test if it contribute the likelihood 
     # of mental disorder. 
-    tabPanel("Regression",
+    tabPanel("Correlation",
              tags$div(class = "jumbotron", 
                       tags$h2("Summary about correlation.", class="text-primary"),
                       tags$div(
                         tags$ul(
-                          tags$li("In the linear regression model about Mental illness and number of employees"),
+                          tags$li("In the study about the connection between Mental illness and number of employees"),
                           tags$li("Multiple R-squared:  0.008306,	Adjusted R-squared:  0.003956 "), 
-                          tags$li(tags$code("lm(formula = ill ~ number, data = study_set)")),
-                          tags$li("There is a weak positive relationship", class="text-success")
+                          tags$li("There is a weak positive relationship", class="text-primary"),
+                          tags$li(tags$code("lm(formula = ill ~ number, data = study_set)"))
                         ), 
                         tags$div(
                           tags$ul(
-                            tags$li("In the linear regression model about Mental illness and number of age"),
+                            tags$li("In the study about the connection between Mental illness and number of age"),
                             tags$li("Multiple R-squared:  5.504e-05,	Adjusted R-squared:  -0.000819 "), 
-                            tags$li(tags$code("lm(formula = ill ~ age, data = study_set)")),
-                            tags$li("There is not likely a connection between", class="text-success")
+                            tags$li("There is not likely a connection between", class="text-primary"), 
+                            tags$li(tags$code("lm(formula = ill ~ age, data = study_set)"))
                           )
                         ),
                           tags$div(
                             tags$ul(
-                              tags$li("In the linear regression model about Mental illness and number of job position"),
+                              tags$li("In the study about the connection between Mental illness and number of job position"),
                               tags$li("Multiple R-squared:  5.504e-05,	Adjusted R-squared:  -0.000819 "), 
-                              tags$li(tags$code("lm(formula = ill ~ position, data = study_set)")),
-                              tags$li("There is a not likely any connection", class="text-success")
+                              tags$li("There is a not likely any connection", class="text-primary"), 
+                              tags$li(tags$code("lm(formula = ill ~ position, data = study_set)"))
                             )
                           )
                         )
