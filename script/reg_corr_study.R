@@ -5,6 +5,7 @@
 library(ggplot2)
 library(data.table)
 library(dplyr)
+library(devtools)
 
 # The function takes no parameter and process the mental health survey in 2016
 to_study_subset <- function() {
@@ -21,21 +22,10 @@ to_study_subset <- function() {
   # specified scale in order to study correlation. 
   # it loop through the dataset and process each column
   for (row in 1:nrow(study_set)){
-    convert_age <- study_set[row, "age"]
     convert_position  <- study_set[row, "position"]
     convert_number <- study_set[row, "number"]
     if_dis <- study_set[row, "ill"]
     
-    # convert the age into age group 
-    if(convert_age <= 29){
-      study_set[row, "age"] <- 2
-    } else if (convert_age > 30 & convert_age <= 39){
-      study_set[row, "age"] <- 3
-    } else if (convert_age > 40 & convert_age <= 49){
-      study_set[row, "age"] <- 4
-    } else {
-      study_set[row, "age"] <- 5
-    }
     
     # convert the work position into numerical data
     if(convert_position == "Back-end Developer" | convert_position == "DevOps"){
@@ -76,21 +66,21 @@ to_study_subset <- function() {
   
   # output the subset to data directroy
   write.csv(study_set, file= "../final-app/app-data/study_set.csv", row.names = FALSE)
+  return(study_set)
 }
-# function call 
 
+# function call.
 study_subset <- to_study_subset()
 
+# test on correltaion between age and likelihood of mental illness. 
 linearMod_1 <- lm(ill ~ age, data=study_set)
-print(linearMod)
 summary(linearMod)
 
-linearMod_2 <- lm(ill ~ age, data=study_set)
-print(linearMod_2)
+# test on correltaion between position and likelihood of mental illness. 
+linearMod_2 <- lm(ill ~ position, data=study_set)
 summary(linearMod_2)
 
-
-linearMod_3 <- lm(ill ~ age, data=study_set)
-print(linearMod_3)
+# test on correltaion between number of employees and likelihood of mental illness. 
+linearMod_3 <- lm(ill ~ number, data=study_set)
 summary(linearMod_3)
 

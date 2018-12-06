@@ -37,24 +37,24 @@ shinyUI(
                       tags$div(
                         tags$ul(
                           tags$li("In the study about the connection between Mental illness and number of employees"),
-                          tags$li("Multiple R-squared:  0.008306,	Adjusted R-squared:  0.003956 "), 
+                          tags$li("Multiple R-squared:  0.008306,	  Adjusted R-squared:  0.003956 "), 
                           tags$li("There is a weak positive relationship", class="text-primary"),
-                          tags$li(tags$code("lm(formula = ill ~ number, data = study_set)"))
+                          tags$li(tags$code("lm(formula = if_mental_disorder ~ number_of_employees, data = study_set)"))
                         ), 
                         tags$div(
                           tags$ul(
                             tags$li("In the study about the connection between Mental illness and number of age"),
-                            tags$li("Multiple R-squared:  5.504e-05,	Adjusted R-squared:  -0.000819 "), 
-                            tags$li("There is not likely a connection between", class="text-primary"), 
-                            tags$li(tags$code("lm(formula = ill ~ age, data = study_set)"))
+                            tags$li("Multiple R-squared:  5.504e-05,	  Adjusted R-squared:  -0.000819 "), 
+                            tags$li("There not likely any linear relationship between number of employee and mental disorder", class="text-primary"), 
+                            tags$li(tags$code("lm(formula = if_mental_disorder ~ age_group, data = study_set)"))
                           )
                         ),
                           tags$div(
                             tags$ul(
                               tags$li("In the study about the connection between Mental illness and number of job position"),
-                              tags$li("Multiple R-squared:  5.504e-05,	Adjusted R-squared:  -0.000819 "), 
-                              tags$li("There is a not likely any connection", class="text-primary"), 
-                              tags$li(tags$code("lm(formula = ill ~ position, data = study_set)"))
+                              tags$li("Multiple R-squared:  5.504e-05,	  Adjusted R-squared:  -0.000819 "), 
+                              tags$li("There is a not likely any linear relationship between job position and mental disorder", class="text-primary"), 
+                              tags$li(tags$code("lm(formula = if_mental_disorder ~ job_position, data = study_set)"))
                             )
                           )
                         )
